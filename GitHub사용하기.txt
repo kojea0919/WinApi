@@ -1,3 +1,6 @@
+https://github.com/kojea0919/Lib.git
+
+
 github사용법
 
 원격 저장소 생성 -> 주소 알고 있어야함(http://github.com/.../WinApi)
@@ -57,3 +60,8 @@ git push 명령어 사용시 failed to push some refs to... 이런 에러가 나는 경우
 
 해결방법 : 최신내용을 Local에 적용한 후 올리기
 git pull origin을 하고 나서 push를 해야한다.
+
+
+git add 취소하기(파일 상태를 Unstage로 변경하기)
+get reset HEAD *
+
