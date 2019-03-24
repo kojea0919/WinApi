@@ -1,0 +1,50 @@
+github사용법
+
+원격 저장소 생성 -> 주소 알고 있어야함(http://github.com/.../WinApi)
+
+폴더 하나 생성(로컬 저장소) -> Git/WinApi
+
+cmd 실행해서 생성한 폴더 경로로 이동한다.
+그리고 다음 명령어 입력
+
+git clone https://github.com/.../WinApi(원격 저장소 주소)
+
+그러면 우리가 만들었던 로컬 저장소에 WinApi라는 폴더가 생성되어있을 것이다.
+
+이 폴더에 몇개의 파일을 추가하자
+
+이번엔 cmd를 실행해서 WinApi라는 폴더의 경로로 이동
+
+git status : 명령어 입력
+* git status명령어란?
+   파일의 상태를 확인하는 명령어다.
+   아직 commit이 안된 파일은 빨간색으로 표시된다.
+
+git add 파일명 : 명령어 입력
+
+
+git commit : 명령어 입력(-m 옵션(메시지 남기기))
+  위에서 add된 파일을 commit해 준다.
+  만약 여기서 Please tell me who you are error가 나는 경우 
+  git config user.name "이름 입력"
+  git config user.email "이메일 입력" 를 차례대로 입력한다.
+
+git push : 명령어 입력
+  아이디, 비밀번호 입력하면 push작업이 이루어 진다.
+
+
+Github에 잘못 올라간 파일 삭제하기
+이미 github remote에서 push를 했기 때문에 로컬의 저장소에서
+파일을 삭제해도 원격 저장소에서 삭제되지 않는다.
+
+명령어 2개를 소개한다.
+
+git rm [File Name]
+//원격 저장소와 로컬 저장소에 있는 파일을 삭제한다.
+
+git rm --cached [File Name]
+//원격 저장소에 있는 파일을 삭제한다.
+
+하고 git push해준 다음에
+
+원격 저장소는  pull request인가? 뭐 눌러줘야 적용된다.
