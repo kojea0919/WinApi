@@ -47,4 +47,13 @@ git rm --cached [File Name]
 
 하고 git push해준 다음에
 
-원격 저장소는  pull request인가? 뭐 눌러줘야 적용된다.
+원격 저장소는  New pull request인가? 뭐 눌러줘야 적용된다.
+
+git push 명령어 사용시 failed to push some refs to... 이런 에러가 나는 경우
+
+원인 : 현재 작업하고 있는 Repository가 서버에 있는 Repository 보다 오래된 내용이여서
+발생하는 에러 Push했을 때 오래된 내용으로 덮어 쓰는 문제가 발생할 수 있기 때문에 
+에러를 발생시킨다.
+
+해결방법 : 최신내용을 Local에 적용한 후 올리기
+git pull origin을 하고 나서 push를 해야한다.
